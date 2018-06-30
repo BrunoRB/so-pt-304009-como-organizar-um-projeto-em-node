@@ -5,7 +5,8 @@ const DB = require('./modules/database');
 DB.isReady.then(async () => {
 	console.info('Datbase is ready');
 
-	// let server = HttpServer();
+	const HttpServer = require('./modules/http-server');
+	let server = HttpServer();
 	// socket server
 
 	// um arquivo qualquer que faz algo com a db
